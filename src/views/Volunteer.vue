@@ -83,7 +83,7 @@
                 </v-col>
              </v-row>
         </v-container>
-
+  <Footer v-if="!noData"/>
     </v-content>
 
 </template>
@@ -95,6 +95,7 @@ export default {
     inject: ['theme'],
     components:{
         Volunteers:()=>import('@/components/team/Volunteers'),
+          Footer:()=>import('@/components/core/Footer')
     },
     data:() =>({
       loader:true,

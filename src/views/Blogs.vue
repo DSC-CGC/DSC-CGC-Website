@@ -16,6 +16,7 @@
         </v-col>
       </v-row>
     </v-container>
+    <Footer v-if="!noData"/>
 
 
   </v-content>
@@ -27,6 +28,7 @@ export default {
   components: {
     BlogsHeader:()=>import('@/components/blogs/BlogsHeader'),
     BlogsDetails:()=>import('@/components/blogs/BlogsDetails'),
+    Footer:()=>import('@/components/core/Footer')
   },
 };
 </script>

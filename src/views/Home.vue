@@ -55,7 +55,7 @@
         </v-col>
       </v-row>
     </v-container>
-
+  <Footer v-if="!noData"/>
   </v-content>
   
 </template>
@@ -67,6 +67,7 @@ import { mapState } from "vuex";
 export default {
   name: 'Home',
   components: {
+     Footer:()=>import('@/components/core/Footer'),
     HomeStartScreen:()=>import('@/components/home/HomeStartScreen'),
     whatwedo:()=>import('@/components/home/WhatWeDo'),
     AboutCommunity:()=>import('@/components/home/AboutCommunity'),

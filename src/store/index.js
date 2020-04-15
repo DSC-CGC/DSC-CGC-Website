@@ -52,6 +52,15 @@ export default new Vuex.Store({
         },
       },
       {
+        text: "Forum",
+        to: "/forum",
+        icon: "mdi-assistant",
+        meta: {
+          showToolbar: true,
+          showBottomNav: false,
+        },
+      },
+      {
         text: "About",
         to: "/about",
         icon: "mdi-comment-alert",

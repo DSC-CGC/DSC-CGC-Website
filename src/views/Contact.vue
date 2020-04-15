@@ -17,6 +17,7 @@
         </v-col>
       </v-row>
     </v-container>
+    <Footer v-if="!noData"/>
   </v-content>
 </template>
 
@@ -25,7 +26,8 @@ import { mapState } from "vuex";
 export default {
   components: {
     contactHeader:()=>import('@/components/contact/ContactHeader'),
-    contactDetails:()=>import('@/components/contact/ContactDetails')
+    contactDetails:()=>import('@/components/contact/ContactDetails'),
+        Footer:()=>import('@/components/core/Footer')
   },
   computed: {
     ...mapState(["config"])

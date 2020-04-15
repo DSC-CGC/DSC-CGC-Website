@@ -17,6 +17,7 @@
                 </v-col>
             </v-row>
         </v-container>
+    <Footer v-if="!noData"/>
     </v-content>
 </template>
 
@@ -29,7 +30,8 @@ export default {
         upcomingMeetupsEvents:()=>import('@/components/events/UpcomingEvents'),
         pastMeetupsEvents:()=>import('@/components/events/PastEvents'),
         featureEvents:()=>import('@/components/home/FeaturesEvents'),
-        customPastEvents:()=>import('@/components/events/CustomPastEvents')
+        customPastEvents:()=>import('@/components/events/CustomPastEvents'),
+         Footer:()=>import('@/components/core/Footer')
     },
     computed:{
         ...mapState(["config"])

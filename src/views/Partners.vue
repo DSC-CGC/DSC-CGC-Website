@@ -7,14 +7,15 @@
         </v-col>
       </v-row>
     </v-container>
-
+  <Footer v-if="!noData"/>
   </v-content>
 </template>
 
 <script>
 export default {
   components: {
-    partners:()=>import('@/components/common/Partners')
+    partners:()=>import('@/components/common/Partners'),
+      Footer:()=>import('@/components/core/Footer')
   },
 };
 </script>

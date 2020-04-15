@@ -60,7 +60,7 @@
               </v-col>
              </v-row>
         </v-container>
-
+  <Footer v-if="!noData"/>
     </v-content>
 
 </template>
@@ -73,7 +73,8 @@ export default {
     components:{
         TeamHeader:()=>import('@/components/team/TeamHeader'),
         CoreTeam:()=>import('@/components/team/CoreTeam'),
-        OrgainizingTeam:()=>import('@/components/team/OrganizingTeam')
+        OrgainizingTeam:()=>import('@/components/team/OrganizingTeam'),
+          Footer:()=>import('@/components/core/Footer')
     },
     data:() =>({
       loader:true,

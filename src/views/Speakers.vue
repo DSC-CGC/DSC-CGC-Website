@@ -70,6 +70,7 @@
         </v-col>
       </v-row>
     </v-container>
+  <Footer />
   </v-content>
 </template>
 
@@ -80,7 +81,9 @@ export default {
   inject: ["theme"],
   components: {
     SpeakerHeader: () => import("@/components/speakers/SpeakerHeader"),
-    SpeakerView: () => import("@/components/speakers/Speakerview")
+    SpeakerView: () => import("@/components/speakers/Speakerview"),
+          Footer:()=>import('@/components/core/Footer')
+
   },
   data: () => ({
     loader: true,

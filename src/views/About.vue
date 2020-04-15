@@ -38,6 +38,7 @@
         </v-col>
       </v-row>
     </v-container>
+    <Footer v-if="!noData"/>
   </v-content>
 </template>
 
@@ -51,7 +52,8 @@ export default {
     aboutHeader: () => import("@/components/about/AboutHeader"),
     communityGuidelines: () => import("@/components/about/CommunityGuidelines"),
     coc: () => import("@/components/about/COC"),
-    antiHarassmentPolicy: () => import("@/components/about/AntiHar")
+    antiHarassmentPolicy: () => import("@/components/about/AntiHar"),
+    Footer:()=>import('@/components/core/Footer')
   },
   computed: {
     ...mapState(["config"])

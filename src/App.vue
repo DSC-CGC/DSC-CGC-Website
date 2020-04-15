@@ -30,7 +30,6 @@
       </v-container>
     </v-content>
     <Views v-if="!isLoading && !noData" />
-    <Footer v-if="!noData"/>
   </v-app>
 </template>
 
@@ -43,8 +42,7 @@ export default {
     Toolbar:()=>import('@/components/core/Toolbar'),
     BottomNav:()=>import('@/components/core/BottomNav'),
     Drawer:()=>import('@/components/core/Drawer'),
-    Views:()=>import('@/components/core/Views'),
-    Footer:()=>import('@/components/core/Footer')
+    Views:()=>import('@/components/core/Views')
   },
   data: () => ({
     isLoading: true,
