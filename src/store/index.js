@@ -34,15 +34,6 @@ export default new Vuex.Store({
         },
       },
       {
-        text: "Forum",
-        to: "/forum",
-        icon: "mdi-language",
-        meta: {
-          showToolbar: true,
-          showBottomNav: true,
-        },
-      },
-      {
         text: "Team",
         to: "/team",
         icon: "mdi-account-settings",
@@ -63,7 +54,7 @@ export default new Vuex.Store({
       {
         text: "About",
         to: "/about",
-        icon: "mdi-comment-alert-outline",
+        icon: "mdi-comment-alert",
         meta: {
           showToolbar: true,
           showBottomNav: true,

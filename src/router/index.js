@@ -94,15 +94,6 @@ const routes = [{
     }
   },
   {
-    path: '/forum',
-    name: 'Forum',
-    component: () => import( /* webpackChunkName: "forum" */ '../views/Forum.vue'),
-    meta: {
-      title: 'Forum ',
-      color: '#0277bd',
-    }
-  },
-  {
     path: '/contact',
     name: 'Contact',
     component: () => import( /* webpackChunkName: "contact" */ '../views/Contact.vue'),
