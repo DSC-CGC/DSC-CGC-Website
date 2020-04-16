@@ -33,6 +33,16 @@ export default new Vuex.Store({
           showBottomNav: true,
         },
       },
+      
+      {
+        text: "Forum",
+        to: "/forum",
+        icon: "mdi-forum",
+        meta: {
+          showToolbar: true,
+          showBottomNav: false,
+        },
+      },
       {
         text: "Team",
         to: "/team",
@@ -48,16 +58,7 @@ export default new Vuex.Store({
         icon: "mdi-assistant",
         meta: {
           showToolbar: true,
-          showBottomNav: false,
-        },
-      },
-      {
-        text: "Forum",
-        to: "/forum",
-        icon: "mdi-assistant",
-        meta: {
-          showToolbar: true,
-          showBottomNav: false,
+          showBottomNav: true,
         },
       },
       {
@@ -66,7 +67,7 @@ export default new Vuex.Store({
         icon: "mdi-comment-alert",
         meta: {
           showToolbar: true,
-          showBottomNav: true,
+          showBottomNav: false,
         },
       },
       {
