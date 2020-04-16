@@ -41,6 +41,17 @@
           small
           class="mt-0 mx-0"
           icon
+          v-if="checkExistance(data.facebook,0)"
+          :href="data.facebook"
+          target="_blank"
+        >
+          <v-icon small :color="this.$vuetify.theme.dark == true?'white':'#333'">mdi-instagram</v-icon>
+        </v-btn>
+        <v-btn
+          aria-label="social media btn"
+          small
+          class="mt-0 mx-0"
+          icon
           v-if="checkExistance(data.medium,0)"
           :href="data.facebook"
           target="_blank"
