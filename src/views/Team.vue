@@ -81,6 +81,7 @@ export default {
       OrganizingTeam:[],
       CoreTeam:[],
       Volunteers:[],
+      noData:false,
       notFound:false,
       ErrorMsg:''
     }),
