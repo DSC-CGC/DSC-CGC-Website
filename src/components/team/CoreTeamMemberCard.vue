@@ -25,8 +25,16 @@
         >
          {{data.name}} 
         </v-card-title>
-
         <v-card-text class="pa-5">
+          <div>
+           <br/>
+           <v-avatar size="100">
+                  <img 
+                    :src="getImgUrl(data.image, 'profile.jpg')"
+                    :lazy-src="getImgUrl(data.image, 'profile.jpg')" alt=""
+                  >
+                </v-avatar>
+         </div>
             <p class="google-font">{{data.designation}}</p>
             <p class="google-font">{{data.bio}}</p>
             

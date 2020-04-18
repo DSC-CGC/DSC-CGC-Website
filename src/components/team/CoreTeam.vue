@@ -19,7 +19,7 @@ export default {
   components: {
     CoreTeamMemberCard: () => import("@/components/team/CoreTeamMemberCard")
   },
-  data: () => ({}),
+  data: () => ({}).sort(function(a, b){return a - b}),
   created() {},
   methods: {}
 };
