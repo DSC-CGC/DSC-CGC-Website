@@ -93,8 +93,16 @@ export default {
           this.loader = true
           service.getTeam().then(res=>{
             if(res.success==true){
-              this.OrganizingTeam = res.data.filter(res=>res.role=='Organizing Team' && res.visible )
-              this.CoreTeam = res.data.filter(res=>res.role=='Core Team' && res.visible )
+              this.OrganizingTeam = res.data.filter(res=>res.role=='Organizing Team' && res.visible ).sort(function(a, b) {
+              var textA = a.name.toUpperCase();
+              var textB = b.name.toUpperCase();
+              return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+          });
+              this.CoreTeam = res.data.filter(res=>res.role=='Core Team' && res.visible ).sort(function(a, b) {
+                  var textA = a.name.toUpperCase();
+                  var textB = b.name.toUpperCase();
+                  return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+              });
               this.Volunteers = res.data.filter(res=>res.role=='Volunteer' && res.visible )
               this.loader = false
               this.notFound = false
