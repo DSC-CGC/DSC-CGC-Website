@@ -49,15 +49,6 @@ const routes = [{
     }
   },
   {
-    path: '/forum',
-    name: 'Forum',
-    component: () => import( /* webpackChunkName: "events" */ '../views/Forum.vue'),
-    meta: {
-      title: 'Forum ',
-      color: '#0277bd',
-    }
-  },
-  {
     path: '/events/:id',
     name: 'Events-Details',
     component: () => import( /* webpackChunkName: "events-details" */ '../views/Events/EventDetails.vue'),

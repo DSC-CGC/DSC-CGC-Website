@@ -33,16 +33,6 @@ export default new Vuex.Store({
           showBottomNav: true,
         },
       },
-      
-      {
-        text: "Forum",
-        to: "/forum",
-        icon: "mdi-forum",
-        meta: {
-          showToolbar: true,
-          showBottomNav: true,
-        },
-      },
       {
         text: "Team",
         to: "/team",
